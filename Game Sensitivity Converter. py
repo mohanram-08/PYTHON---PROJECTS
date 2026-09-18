@@ -1,0 +1,18 @@
+print("Game sensitivity converter \n",
+      "Enter 'FF' to convert Sensitivity of 'BGMI' to 'FF'\n",
+      "Enter 'BGMI' to convert sensitivity of 'FF' to 'BGMI'\n")
+
+choice = input("Enter your choice FF (or) BGMI: ")
+
+if choice == "FF":
+    sensi = int(input("Enter your BGMI Sensitivity: "))
+    ff_sensi = round(sensi / 1.5)
+    print("Your FF Sensitivity is", ff_sensi) 
+
+elif choice == "BGMI":
+    sensi = int(input("Enter your FF Sensitivity: "))
+    bgmi_sensi = round(sensi * 1.5)
+    print("Your BGMI Sensitivity is", bgmi_sensi)
+
+else:
+    print("Invalid choice. Please restart the program and enter FF or BGMI.")
